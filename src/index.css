@@ -49,7 +49,13 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40; 
-  
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
    
 }
 ::-webkit-scrollbar{
@@ -61,6 +67,7 @@ body {
   hyphens: auto;
   background-color: rgb(255, 255, 255);
 }
+
 #main {
   display: grid;
   grid-template: repeat(4,1fr);
@@ -387,8 +394,7 @@ span {
   align-items: stretch;
   grid-template-columns: repeat(2,1fr);
   gap: 2em;
-  
-  padding: 0 22em;
+
   color:var(--secondary-action-dark);
   border: var(--secondary-action-dark) solid;
   background-color: #00388104;
@@ -402,7 +408,7 @@ span {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2em;
+    
     color:var(--secondary-action-dark);
     border: var(--secondary-action-dark) solid;
     background-color: #00388104;
@@ -662,12 +668,12 @@ span {
 
 .insights{
   display: flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items: stretch;
   text-align: center;
   margin: 2em 0 0 0;
   list-style: none;
-  padding: 1rem;
+  padding: 2em;
   margin-top: 400px;
   color: #343a40;
 }
@@ -680,7 +686,7 @@ span {
   .insights{
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:center;
     align-items: stretch;
     text-align: center;
     margin: 2em 0 0 0;
@@ -695,7 +701,7 @@ span {
   background-color: #00388100;
   border: 2px solid rgba(0, 0, 0, 0.082);
   box-shadow: 2px 2px 2px var(--primary-action-darker);
-  padding:2em 4em;
+  padding:2em 0.8em;
   border-radius: 10px;
   margin: 10px;
   display: flex;
